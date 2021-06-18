@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+  font-size: 18px;
+}
+body{
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+}
+.left__navigation-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2d6886;
+  padding: 20px;
+}
+.left__navigation-menu ul,
+.right_part-header ul{
+  list-style-type: none;
+  padding-top: 15px;
+}
+.left__navigation-menu ul li:first-child{
+  padding-top: 70px;
+}
+.left__navigation-menu ul li{
+  padding-top: 30px;
+}
+.left__navigation-menu ul li a{
+  color: #fff;
+  font-size: 32px;
+}
+.right_part-header ul li a{
+  color: #000;
+  font-size: 32px;
+}
+.left_part-header{
+  padding:15px 0 0 15px;
+}
+.right_part-header{
+  display: flex;
+}
+.right_part-header ul li{
+  display: inline;
+  padding: 15px 20px;
+  border-right: 1px solid #c4c4c4;
+}
+.right_part-header ul li:last-child{
+  border: none;
+}
+.contact_us{
+  display: flex;
+  background: #b9e3c4;
+  padding: 8px 15px 8px 20px;
+}
+.contact_us p{
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contact_us span{
+  color: #505050;
+  font-size: 14px;
+  font-weight: 300;
+}
+.contact-icons{
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.contact-icons span a{
+  font-size: 28px;
+  padding-right: 10px;
+  color: #fff;
+}
+header{
+  padding-left: 80px;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #d1d1d1;
+}
+.header h5{
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 600; 
+  color: #0ea3fc;
+}
+.left_part-header{
+  display: flex;
+}
+
+/*Listpage*/
+.list__body{
+  padding: 50px 200px;
+}
+.list__body-head{
+  display: flex;
+  justify-content: space-between;
+}
+.list__body-title{
+  border-bottom: 3px solid #c4c4c4;
+  width: 84%;
+}
+.list__body h3{
+  font-size: 24px;
+}
+.list__body-button ul{
+  list-style-type: none;
+}
+.list__body-button ul li{
+  display: inline;
+}
+.list__body-button ul li a{
+  color: #505050;
+  font-size: 20px;
+  padding-right: 20px;	
+}
+.list__body-button ul li a:hover,
+.right_part-header ul li a:hover{
+  text-decoration: none;
+  color: #0ea3fc;
+}
+
+/*Table*/
+.table_list{
+  margin-top: 40px;
+}
+.table_list table{
+  background: #eeeeee;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+.table_list table td,
+.table_list table th{
+  border: none;
+}
+.table_list thead{
+  border-bottom: 1px solid #c4c4c4;
+  color: #505050;
+}
+
+/*Pagination*/
+.pagination{
+  float: right;
+}
+
+/*Search-bar*/
+.search-bar .btn-secondary, .search-bar-list .btn-secondary {
+  border-radius: 0px 8px 8px 0;
+  background-color: #ffffff!important;
+  color: #505050!important;
+  border: none!important;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+  margin: 5px 0px 8px 0;
+}
+.search-bar .btn-secondary:focus, .search-bar-list .btn-secondary:focus{
+  box-shadow: 2px 3px 4px -1px #c4c4c4;  
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  font-size: 14px!important;
+  color: #7a7a7a!important;
+}
+.form-control {
+  padding-left: 15px!important;
+}
+.search-bar-list input[type=text]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: none!important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+
+
+/*This is student detail page css*/
+.student__body-detail{
+  padding: 50px 100px 50px 150px;
+}
+.sts__detail-main-profile{
+  display: flex;
+  justify-content: flex-start;
+}
+.sts__detail-main-profile-img{
+  height: 150px;
+  width: 150px;
+  background-image: url(./Shared/img/user.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:5px solid #efefd1;
+}
+.sts__detail-main-profile-img{
+  height: 150px;
+  width: 150px;
+}
+.sts__detail-main-profile-info{
+  flex-basis: 80%;
+}
+.sts_detail-main{
+  margin: 50px 0 0 0;
+}
+.detail-table tr:nth-child(odd){
+	background: #eff3fe;
+}
+.detail-table tr:nth-child(even){
+  background: #dae6ff;
+}
+.sts_detail-main table {
+  border-collapse: separate;
+  border-spacing: 7px;
+}
+.detail-table td:first-child{
+  color: #76a1c6;
+  font-weight: 600;
+}
+.border-style{
+  width:40%; 
+  position: absolute;
+  top: 79%;
+  right: 0%;
+  height: 10px;
+  border-bottom: 14px solid #9d0e00;
+  border-radius: 5px 0 0 0;
+}
+
+/*Browse Image*/
+.picture-container{
+  position: absolute;
+  top: 24%;
+  right: 80%;
+}
+.choose_img .picture-container{
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.choose_img .picture {
+  width: 37px;
+  height: 37px;
+  background-color: #999999;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin: 5px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  padding-top: 5px;
+}
+.choose_img .picture-src {
+  width: 100%;
+  height: 100%;
+}
+.choose_img .picture input[type="file"] {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.choose_img .picture span{
+  height: 15px;
+  width: 18px;
+}
+
+
+/*This is css code for Login Page*/
+.login__page{
+  padding: 100px 150px;
+  display: flex;
+  justify-content: space-around;
+  background:#f8f8f8;
+}
+.login__page-box{
+  width: 45%;
+  background: #eeeeee;
+  padding: 50px 50px 100px 50px;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+.login__page-box h4{
+  text-align: left;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.info{
+  position: relative;
+}
+.info h6{
+  font-size: 18px;
+}
+.info span{
+  color: #95ccb7;
+}
+.info ul{
+  list-style-type: none;
+}
+.info ul li{
+  line-height: 2.4;
+}
+.sts_img{
+  position: absolute;
+  top: 10%;
+  right: -5%;
+}
+
+
+/*Form*/
+.login__page-box input[type=text], 
+.login__page-box input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+  outline: none!important;
+}
+.login__page .btn-login{
+  padding: 10px 35px;
+  margin-top: 25px;
+  background: #be58d5;
+  color: #fff;
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+.login__page .btn-login:hover{
+  background: #be58d5;
+  opacity: 0.8; 
+}
+
+/*setting page*/
+.setting{
+  padding: 50px 100px 50px 200px;
+}
+.setting h3{
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c4c4c4;
+}
+.setting_items{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.setting_items-subitem{
+  height: 150px;
+  width: 180px;
+  border-radius: 10%;
+  background: #fff;
+  text-align: center;
+  padding-top: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+.sts,
+.manage_events,
+.classes,
+.teacher,
+.subject,
+.exam,
+.enquiry{
+  background: #fff;
+  box-shadow: 2px 3px 4px -4px #505050;
+}
+.setting_items-subitem span{
+  font-size: 52px;
+  color: #737373;
+}
+.setting_items-subitem p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #737373;
+}
+.sts:hover,
+.manage_events:hover,
+.classes:hover,
+.teacher:hover,
+.subject:hover,
+.exam:hover,
+.enquiry:hover{
+  box-shadow: 2px 3px 4px -1px #c4c4c4;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  width:100%;
+  height: 100%;
+  background: white;
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 50%;
+  height: 40%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: red;
+  color: white;
+}
+
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: red;
+  color: white;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  position: "left"
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
