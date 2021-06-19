@@ -12,7 +12,7 @@ function App() {
   //   setIsOpen(false);
   // }
 
-  const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [isLoggedIn, setisLoggedIn] = useState(true);
 
   if(isLoggedIn === false){
     console.log(isLoggedIn, routeDashboard);
