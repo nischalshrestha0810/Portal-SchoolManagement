@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import AppRoutes from './app.routing';
 import { useState } from 'react';
+import Login from './Login/Login';
 function App() {
   //const [modalIsOpen, setIsOpen] = useState(false);
   const [routeDashboard, setrouteDashboard] = useState('/');
@@ -26,7 +27,7 @@ function App() {
   // }
   return(
     <div className="App">
-        <Login setisLoggedIn={props.setisLoggedIn} setrouteDashboard={props.setrouteDashboard}> </Login>
+        <Login setisLoggedIn={setisLoggedIn} setrouteDashboard={setrouteDashboard}> </Login>
       </div>
   )
   
