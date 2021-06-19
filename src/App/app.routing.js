@@ -16,7 +16,7 @@ const AppRoutes = (props) => {
                ? <Route exact path = "/" render={() => (<Login setisLoggedIn={props.setisLoggedIn} setrouteDashboard={props.setrouteDashboard}> </Login>)} /> 
                : props.path === '/dashboard' 
                ? <Route exact path = "/dashboard" component={Dashboard}></Route>
-                :<Route path='*'><div>404 NOT FOUND</div> </Route>
+                :<Route path='*'><div>404 NOT FOUND TEST</div> </Route>
 
             }
         </Router>
