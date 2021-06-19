@@ -14,16 +14,21 @@ function App() {
 
   const [isLoggedIn, setisLoggedIn] = useState(true);
 
-  if(isLoggedIn === false){
-    console.log(isLoggedIn, routeDashboard);
-    return <AppRoutes path={'/'} setisLoggedIn={setisLoggedIn}  setrouteDashboard={setrouteDashboard}/>
-  }
+  // if(isLoggedIn === false){
+  //   console.log(isLoggedIn, routeDashboard);
+  //   return <AppRoutes path={'/'} setisLoggedIn={setisLoggedIn}  setrouteDashboard={setrouteDashboard}/>
+  // }
 
-  if(isLoggedIn === true){  
-    return(
-      <AppRoutes path={'/dashboard'} isLoggedIn={isLoggedIn}></AppRoutes>      
-    ) 
-  }
+  // if(isLoggedIn === true){  
+  //   return(
+  //     <AppRoutes path={'/dashboard'} isLoggedIn={isLoggedIn}></AppRoutes>      
+  //   ) 
+  // }
+  return(
+    <div className="App">
+        <Login setisLoggedIn={props.setisLoggedIn} setrouteDashboard={props.setrouteDashboard}> </Login>
+      </div>
+  )
   
   // return (
   //   <div className="App">
