@@ -1,4 +1,5 @@
 // import { Component } from "react"
+import './ConfirmDialog.css'
 import ReactDOM from 'react-dom';
 // class ConfirmDialog extends Component {
 //     constructor(props) {
