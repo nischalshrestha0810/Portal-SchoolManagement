@@ -1,26 +1,43 @@
+//import { Fragment } from 'react';
 import { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Dashboard from './DashBoard/Dashboard';
 import Login from './Login/Login';
 
 
-const AppRoutes = (props) => {
+const ProtectedRoutes = ({component : Component , ...props}) => {
+    debugger;
+    return (
 
-    console.log('inside approutes', props);
-    // if(props.path === '/dashboard'){
-    //     history 
-    // }
+        <Route {...props} render= { (props)=> {
+            return(
+                localStorage.getItem("authkey")
+                ? <Component {...props} />
+                : <Redirect to ="/"></Redirect>
+            )           
+        }}/>
+    )
+}
+
+const PublicRoutes = ({component : Component , ...props}) => {
+    debugger;
+    return (
+
+        <Route {...props} render= { (props)=> {return (<Fragment><Component {...props}/></Fragment> )
+        }}/>
+    )
+}
+
+const AppRoutes = (props) => {
     return (
         <Router>
-            { props.path ==='/Login' 
-               ? <Route exact path = "/" render={() => (<Login setisLoggedIn={props.setisLoggedIn} setrouteDashboard={props.setrouteDashboard}> </Login>)} /> 
-               : props.path === '/dashboard' 
-               ? <Route exact path = "/dashboard" component={Dashboard}></Route>
-                :<Route path='*'><div>404 NOT FOUND TEST</div> </Route>
-
-            }
+            <Switch>
+            <PublicRoutes exact path = "/" component= {Login}></PublicRoutes>
+            <PublicRoutes exact path = "/login" component= {Login}></PublicRoutes>
+            <ProtectedRoutes exact path = "/dashboard" component = {Dashboard}></ProtectedRoutes>
+            <PublicRoutes path= '*' > <div>404 not found</div></PublicRoutes>
+            </Switch>           
         </Router>
-
     )
 
 }

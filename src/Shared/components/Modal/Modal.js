@@ -1,10 +1,8 @@
 import { Fragment } from "react";
 import {Redirect } from "react-router-dom";
 
-const Modal = ({ handleClose, show, children }) => {
+const Modal = ({ handleClose, show, message, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
-  console.log('clicked');
-  console.log(handleClose);
   return (
     <div className={showHideClassName}>
       <div className="modal-content">
@@ -13,7 +11,7 @@ const Modal = ({ handleClose, show, children }) => {
         </div>
         <div class="modal-body">
           <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
+          <p>{message ? message : "test"}</p>
         </div>
         <div class="modal-footer">
           <button class="close" type="button" onClick={handleClose} position="middle">
