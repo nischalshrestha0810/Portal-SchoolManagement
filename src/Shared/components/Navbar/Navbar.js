@@ -18,6 +18,9 @@ const Navbar = (props) => {
     }
     if(confirm === true){
         console.log("check this");
+        setTimeout(() => {
+            
+        }, (5000));
         localStorage.removeItem("authkey");
         props.history.push("/");
     }
